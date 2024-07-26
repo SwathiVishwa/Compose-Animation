@@ -55,21 +55,8 @@ class MainActivity : ComponentActivity() {
                                   .align(Alignment.BottomCenter)
                                   .padding(bottom = 200.dp)
                           )*/
-                        CardShuffleView3(isVisible)
+                        CardShuffleView3()
 
-                        Text(
-                            "Shuffle the cards",
-                            style = TextStyle.Default.copy(color = Color.White),
-                            modifier = Modifier
-                                .wrapContentSize()
-                                .clip(RoundedCornerShape(30.dp))
-                                .align(Alignment.BottomCenter)
-                                .background(color = ButtonPink)
-                                .padding(horizontal = 40.dp, vertical = 20.dp)
-                                .clickable {
-                                    isVisible.targetState = !isVisible.targetState
-                                }
-                        )
                         Spacer(modifier = Modifier.height(30.dp))
                     }
                 }
